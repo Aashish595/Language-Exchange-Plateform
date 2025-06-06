@@ -1,7 +1,7 @@
 <h1 align="center">✨ Fullstack Chat & Video Calling App ✨</h1>
 ![Demo App](/frontend/public/screenshot-for-readme.png)
 
-<h2>Live Link</h2> =  https://language-exchange-plateform.onrender.com/
+<h2> Live Link =  https://language-exchange-plateform.onrender.com/ </h2> 
 Highlights:
 
 - 🌐 Real-time Messaging with Typing Indicators & Reactions
