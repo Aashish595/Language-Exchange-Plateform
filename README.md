@@ -3,7 +3,7 @@
 
 Highlights:
 
-<h2> Live Link =  https://language-exchange-plateform.onrender.com/ </h2> 
+
 
 - 🌐 Real-time Messaging with Typing Indicators & Reactions
 - 📹 1-on-1 and Group Video Calls with Screen Sharing & Recording
