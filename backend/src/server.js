@@ -13,12 +13,21 @@ const PORT = process.env.PORT || 5001;
 
 app.set("trust proxy", 1);
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://language-exchange-plateform.vercel.app",
+];
+
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://language-exchange-plateform-git-main-aashish595s-projects.vercel.app",
-    ],
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        console.log("Blocked by CORS:", origin);
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
