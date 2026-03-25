@@ -10,7 +10,7 @@ import chatRoutes from "./routes/chat.route.js";
 import { connectDB } from "./lib/db.js";
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 app.use(
   cors({
@@ -32,4 +32,8 @@ app.use("/api/chat", chatRoutes);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
   connectDB();
+});
+
+app.get("/", (req, res) => {
+  res.send("Welcome to the Chat App API");
 });
